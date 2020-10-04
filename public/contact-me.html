@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <title>My contact</title>
+    <style>
+        body {
+            background-color: #bbe1fa;
+            color: black;
+        }
+        hr{
+            color: grey;
+            border-style: none;
+            border-top : dotted;
+            border-width: 5px;
+            width: 5%
+        }
+        h1{
+            color: #0f4c75;
+            font-size: 30px;
+        }
+
+        legend{
+            color: #0f4c75;
+            font-size: 30px;
+        }
+        fieldset{
+            border: solid 1px #0f4c75;
+            -webkit-border-radius: 8px;
+            -moz-border-radius: 8px;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+<h1>My Contact</h1>
+<p><em>Phone number:</em>425-229-8049</p>
+<em>My Email: </em>
+<a href="mailto:tranhd2008@gmail.com?subject=Hello">tranhd2008@gmail.com</a>
+<br>
+<br>
+<form action="mailto:tranhd2008@gmail.com" method="post" enctype="text/plain">
+    <label for="Name">Your name:</label>
+    <input type="text" id="Name" name="Name">
+    <br>
+    <br>
+    <label for="message">Your email:</label>
+    <input type="email" name="message">
+    <br>
+    <br>
+    <label for="Message">Message:</label>
+    <br>
+    <br>
+    <textarea name="Message" id="Message" rows="8" cols="80" placeholder="Message here"></textarea>
+    <br>
+    <br>
+    <label>Written Name:
+        <input type="text" name="Name">
+        <input type="date" name="Date" value="Date">
+    </label>
+    <input type="submit"  name="Submit">
+</form>
+</body>
+</html>
