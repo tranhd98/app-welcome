@@ -43,33 +43,24 @@
         img{
             margin: 2% 8% 0 8%;
         }
-        .final1{
-            width: 10%;
-            border-right: solid black 1px;
-            display: inline-block;
+        nav{
+            flex: 0 1 10%;
+            border-right: 1px solid black;
             background-color: #fff2cc;
         }
-        #final2{
-            width: 80%;
-            display: inline-block;
-            position: absolute;
-            top: 0;
-            text-align: left;
-            border-left: 0;
-            border-right: 0;
-            background-color: #fbe4d5;
+       main{
+           flex: 0 1 80%;
+           background-color: #fbe4d5;
         }
+       aside{
+           flex: 0 1 10%;
+           border-left: 1px solid black;
+           background-color: #fff2cc;
+       }
         #final{
-            position: relative;
+            display: flex;
+            flex-direction: row;
             border: solid black 1px;
-        }
-        .final3{
-            width: 10%;
-            border-left: solid black 1px;
-            display: inline-block;
-            position: absolute;
-            right: 0;
-            background-color: #fff2cc;
         }
     </style>
 </head>
@@ -199,8 +190,7 @@
         <img src="images/picture5.png" alt="Exponential graph">
     </div>
     <div id="final">
-        <div class="final1">
-            <p>Lorem ipsum
+            <nav>Lorem ipsum
                 dolor sit amet,
                 consectetur
                 adipiscing elit,
@@ -231,10 +221,10 @@
                 in culpa qui
                 officia deserunt
                 mollit anim id
-                est laborum.</p>
-        </div>
-        <div id="final2">
-            <p>Sed ut perspiciatis unde omnis iste natus error sit
+                est laborum.
+            </nav>
+        <main>
+            Sed ut perspiciatis unde omnis iste natus error sit
             voluptatem accusantium doloremque laudantium,
             totam rem aperiam, eaque ipsa quae ab illo inventore
             veritatis et quasi architecto beatae vitae dicta sunt
@@ -268,10 +258,10 @@
             consequatur? Quis autem vel eum iure reprehenderit
             qui in ea voluptate velit esse quam nihil molestiae
             consequatur, vel illum qui dolorem eum fugiat quo
-            voluptas nulla pariatur?</p>
-        </div>
-        <div class="final3">
-            <p>Lorem ipsum
+            voluptas nulla pariatur?
+        </main>
+        <aside>
+            Lorem ipsum
             dolor sit amet,
             consectetur
             adipiscing elit,
@@ -302,8 +292,8 @@
             in culpa qui
             officia deserunt
             mollit anim id
-            est laborum.</p>
-        </div>
+            est laborum.
+        </aside>
     </div>
     <a href="main.html">Return to main page</a>
 </body>
